@@ -42,8 +42,8 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
           <div className="lg:col-span-2">
             <div className="aspect-3/4 rounded-2xl overflow-hidden bg-muted sticky top-32">
               <img
-                src="src/assets/Ashley.jpg"
-                alt="Matsekoleng Ashley"
+                src="/assets/Ashley.jpg"
+                alt="Matsekoleng Blue"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -75,7 +75,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
             {/* Quick Links */}
             <div className="flex flex-wrap gap-4 pt-4">
               <button className="px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:opacity-90 transition-opacity flex items-center gap-2">
-                <a href="src/assets/ashley_cv.pdf"
+                <a href="/assets/ashley_cv.pdf"
                 download
                 className="px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:opacity-90 transition-opacity flex items-center gap-2"
                 >
