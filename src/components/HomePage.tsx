@@ -299,24 +299,23 @@ export function HomePage({ onNavigate, onViewProject }: HomePageProps) {
                 <h3 className="text-3xl md:text-4xl mb-6">Hello! I'm Ashley</h3>
                 <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
                   <p>
-                    I'm a UI/UX designer with over 5 years of experience
+                    I'm a UI/UX designer with over 5 months of experience
                     creating beautiful, functional digital products. My passion
                     lies in solving complex problems through thoughtful design
                     and creating experiences that users love.
                   </p>
                   <p>
-                    I believe great design is invisible - it feels natural,
+                    I believe great design is easy - it feels natural,
                     intuitive, and effortless. Whether I'm designing a mobile
-                    app, website, or brand identity, I always put the user first
-                    and strive to create solutions that are both aesthetically
-                    pleasing and highly functional.
+                    app, or website, I always put the user first and strive to
+                    create solutions that are both aesthetically pleasing and
+                    highly functional.
                   </p>
                   <p>
                     When I'm not designing, you'll find me exploring new design
-                    trends, mentoring aspiring designers, or enjoying a good cup
-                    of coffee while sketching ideas. I'm always eager to
-                    collaborate on exciting projects and help bring visions to
-                    life.
+                    trends, or enjoying a good cup of coffee while sketching
+                    ideas. I'm always eager to collaborate on exciting projects
+                    and help bring visions to life.
                   </p>
                 </div>
               </div>
