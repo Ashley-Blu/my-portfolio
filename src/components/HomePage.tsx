@@ -123,7 +123,19 @@ export function HomePage({ onNavigate, onViewProject }: HomePageProps) {
   const experiences = [
     {
       year: "Present",
-      title: "Full Stack Developer",
+      title: "Front-End Developer",
+      company: "mLab",
+      description:
+        "Learning and creating web applications that are fully functional, user friendly, and responsive",
+      achievements: [
+        "Building responsive web applications with React and Tailwind CSS",
+        "Creating user-friendly interfaces with modern design patterns",
+        "Collaborating with teams to deliver high-quality solutions",
+      ],
+    },
+    {
+      year: "Present",
+      title: "UI/UX",
       company: "mLab",
       description:
         "Learning and creating web applications that are fully functional, user friendly, and responsive",
@@ -274,7 +286,7 @@ export function HomePage({ onNavigate, onViewProject }: HomePageProps) {
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="mb-24">
-            <h2 className="text-5xl md:text-6xl lg:text-7xl mb-6">About Me</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl mb-6">About Me</h2>
             <p className="text-xl text-muted-foreground max-w-3xl">
               A passionate designer Creating meaningful digital experiences
             </p>

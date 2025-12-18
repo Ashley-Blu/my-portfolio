@@ -1,4 +1,6 @@
 import { Download, Linkedin, Mail } from 'lucide-react';
+import { motion } from "framer-motion";
+
 
 interface AboutPageProps {
   onNavigate: (page: string) => void;
@@ -14,7 +16,18 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
   const experiences = [
     {
       year: 'Present',
-      title: 'Full Stack Developer',
+      title: 'Front-End Developer',
+      company: 'mLab',
+      description: 'Learning and creating web applications that are fully functional, user friendly, and responsive',
+      achievements: [
+        'Building responsive web applications with React and Tailwind CSS',
+        'Creating user-friendly interfaces with modern design patterns',
+        'Collaborating with teams to deliver high-quality solutions'
+      ]
+    },
+    {
+      year: 'Present',
+      title: 'UI/UX',
       company: 'mLab',
       description: 'Learning and creating web applications that are fully functional, user friendly, and responsive',
       achievements: [
@@ -105,23 +118,40 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
 
         {/* Skills Section */}
         <div className="mb-32">
-          <h2 className="text-3xl md:text-4xl mb-12">Skills & Expertise</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {skills.map((skillGroup) => (
-              <div key={skillGroup.category} className="p-8 rounded-xl bg-muted/50">
-                <h3 className="text-xl mb-4">{skillGroup.category}</h3>
-                <ul className="space-y-3">
-                  {skillGroup.items.map((skill) => (
-                    <li key={skill} className="flex items-center gap-2 text-muted-foreground">
-                      <span className="w-1.5 h-1.5 rounded-full bg-accent"></span>
-                      {skill}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
+  <h2 className="text-3xl md:text-4xl mb-12">Skills & Expertise</h2>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {skills.map((skillGroup, index) => (
+      <motion.div
+        key={skillGroup.category}
+        className="p-8 rounded-xl bg-muted/50"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{
+          duration: 0.6,
+          delay: index * 0.15,
+          ease: "easeOut",
+        }}
+      >
+        <h3 className="text-xl mb-4">{skillGroup.category}</h3>
+
+        <ul className="space-y-3">
+          {skillGroup.items.map((skill) => (
+            <li
+              key={skill}
+              className="flex items-center gap-2 text-muted-foreground"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-accent"></span>
+              {skill}
+            </li>
+          ))}
+        </ul>
+      </motion.div>
+    ))}
+  </div>
+</div>
+
 
         {/* Experience Timeline */}
         <div className="mb-32">

@@ -37,7 +37,6 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
         'Responsive Design',
         'Landing Page Design',
         'E-commerce Design',
-        'SaaS Platforms',
         'Corporate Websites',
         'Design Systems'
       ],
